@@ -3,6 +3,7 @@ $dark-blue: #1a2456;
 $pink-orangish: #ff8b68;
 $white-dark: #f0efed;
 $black-soft: #080b1b;
+$soft-pink: #efc2b3;
 
 // GOOGLE FONT
 @import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400;0,700;1,400;1,700&display=swap');
@@ -29,4 +30,76 @@ ul {
 
 a {
     text-decoration: none;
+}
+
+//------------------START------------------//
+
+//---- MAIN ----//
+main {
+    padding: 0.5em;
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(112, 122, 112);
+        padding: 0.5em;
+
+        svg {
+            color: $soft-pink;
+        }
+
+        .right-panel {
+
+            ul {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                outline: rgb(12, 70, 230) solid 2px;
+
+                .buger-button {
+                    display: flex;
+                    flex-direction: column;
+                    background: transparent;
+                    border: none;
+                    gap: 0.2em;
+                    align-items: center;
+
+                    span {
+                        display: block;
+                        height: 4px;
+                        width: 1.8em;
+                        background-color: $soft-pink;
+                        transition: all 0.3s;
+                    }
+                }
+
+                .fa-bag-shopping {
+                    color: $soft-pink;
+                    font-size: 1.4rem;
+                }
+
+                .currency-dropdown {
+                    display: flex;
+                    width: 25%;
+
+
+                    p {
+                        color: $soft-pink;
+                        align-items: center;
+                    }
+
+                    select {
+                        background: none;
+                        border: none;
+                        width: 55%;
+                        color: $soft-pink;
+                        // opacity: 0;
+                        // background-color: red;
+
+                    }
+                }
+            }
+        }
+    }
 }

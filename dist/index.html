@@ -14,9 +14,8 @@
 
 <body>
     <!-- MAIN -->
-    <main>
-        <header>
-
+    <main role="main">
+        <header role="header">
             <svg aria-label="monogram logo" height="38" viewBox="0 0 520 114" fill="currentColor">
                 <title>Monogram</title>
                 <path d="M150,36V0H0V114H150ZM144,6V36H78V6ZM6,6H72V72H6ZM72,108H6V78H72Zm72,0H78V78h0V42h66Z"></path>
@@ -43,21 +42,22 @@
                 </path>
             </svg>
             <!--  -->
-
             <nav class="right-panel">
                 <ul>
                     <!-- burger menu button -->
                     <li>
-                        <div id="menu-toggle" class="buger-button">
+                        <button id="menu-toggle" class="buger-button">
                             <span></span>
                             <span></span>
                             <span></span>
-                        </div>
+                        </button>
                     </li>
-                    <!-- shopping -->
+                    <!-- shopping icon -->
                     <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
                     <!-- currencies -->
-                    <li>$
+                    <li class="currency-dropdown">
+                        <p>$</p>
+
                         <select name="choose currencies" id="currencies">
                             <option value="USD">USD ($)</option>
                             <option value="CAD">CAD ($)</option>
@@ -70,7 +70,6 @@
                     </li>
                 </ul>
             </nav>
-
         </header>
     </main>
     <!-- MAIN END-->

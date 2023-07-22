@@ -1,0 +1,32 @@
+//CUSTOM COLORS
+$dark-blue: #1a2456;
+$pink-orangish: #ff8b68;
+$white-dark: #f0efed;
+$black-soft: #080b1b;
+
+// GOOGLE FONT
+@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+//GLOBAL TWEAKS
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Schibsted Grotesk', sans-serif;
+}
+
+ul {
+    li {
+        list-style: none;
+    }
+}
+
+a {
+    text-decoration: none;
+}

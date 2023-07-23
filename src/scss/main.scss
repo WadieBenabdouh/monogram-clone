@@ -36,8 +36,8 @@ a {
 
 //---- MAIN ----//
 main {
-    background: url('/assets/backgrounds/modular-background.jpg');
-    height: 15em;
+    background: url('/assets/backgrounds/modular-background.jpg') no-repeat;
+    height: 100em;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -54,7 +54,7 @@ main {
         margin-inline: 0.5em;
         position: fixed;
         top: 0px;
-        z-index: 100;
+        z-index: 10;
 
 
 
@@ -123,7 +123,7 @@ main {
     .mobile-nav {
         background-color: $dark-blue;
         position: fixed;
-        z-index: 200;
+        z-index: 20;
         // display: none;
     }
 

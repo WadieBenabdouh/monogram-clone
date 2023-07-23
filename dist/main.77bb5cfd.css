@@ -20,8 +20,8 @@ a {
 }
 
 main {
-  background: url("/modular-background.972e8fb7.jpg");
-  height: 15em;
+  background: url("/modular-background.972e8fb7.jpg") no-repeat;
+  height: 100em;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -37,7 +37,7 @@ main header {
   margin-inline: 0.5em;
   position: fixed;
   top: 0px;
-  z-index: 100;
+  z-index: 10;
 }
 main header svg {
   color: #efc2b3;
@@ -89,7 +89,7 @@ main header .right-panel ul .currency-dropdown select option {
 main .mobile-nav {
   background-color: #1a2456;
   position: fixed;
-  z-index: 200;
+  z-index: 20;
 }
 
 /*# sourceMappingURL=/main.77bb5cfd.css.map */

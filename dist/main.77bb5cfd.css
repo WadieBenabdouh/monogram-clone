@@ -20,14 +20,24 @@ a {
 }
 
 main {
-  padding: 0.5em;
+  background: url("/modular-background.972e8fb7.jpg");
+  height: 15em;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
 }
 main header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  gap: 1em;
   background-color: rgb(112, 122, 112);
   padding: 0.5em;
+  margin-top: 0.5em;
+  margin-inline: 0.5em;
+  position: fixed;
+  top: 0px;
+  z-index: 100;
 }
 main header svg {
   color: #efc2b3;
@@ -43,12 +53,13 @@ main header .right-panel ul .buger-button {
   flex-direction: column;
   background: transparent;
   border: none;
-  gap: 0.2em;
+  gap: 0.4em;
   align-items: center;
+  cursor: pointer;
 }
 main header .right-panel ul .buger-button span {
   display: block;
-  height: 4px;
+  height: 3px;
   width: 1.8em;
   background-color: #efc2b3;
   transition: all 0.3s;
@@ -70,6 +81,15 @@ main header .right-panel ul .currency-dropdown select {
   border: none;
   width: 55%;
   color: #efc2b3;
+}
+main header .right-panel ul .currency-dropdown select option {
+  color: rgb(0, 0, 0);
+  background-color: #fff;
+}
+main .mobile-nav {
+  background-color: #1a2456;
+  position: fixed;
+  z-index: 200;
 }
 
 /*# sourceMappingURL=/main.77bb5cfd.css.map */

@@ -41,6 +41,11 @@ main header {
 }
 main header svg {
   color: #efc2b3;
+  transition: all 0.3s;
+}
+main header svg:hover {
+  color: #e28f74;
+  cursor: pointer;
 }
 main header .right-panel ul {
   display: flex;
@@ -59,7 +64,7 @@ main header .right-panel ul .buger-button {
 }
 main header .right-panel ul .buger-button span {
   display: block;
-  height: 3px;
+  height: 2px;
   width: 1.8em;
   background-color: #efc2b3;
   transition: all 0.3s;
@@ -86,7 +91,11 @@ main header .right-panel ul .currency-dropdown select option {
   color: rgb(0, 0, 0);
   background-color: #fff;
 }
+main header .right-panel ul .currency-dropdown select:hover {
+  color: #e28f74;
+}
 main .mobile-nav {
+  display: none;
   padding: 1em;
   background-color: #1a2456;
   position: fixed;
@@ -100,10 +109,12 @@ main .mobile-nav .top {
 }
 main .mobile-nav .top svg {
   color: #efc2b3;
+  max-width: 10.2rem;
 }
 main .mobile-nav .top i {
   color: #efc2b3;
   font-size: 1.5rem;
+  cursor: pointer;
 }
 main .mobile-nav .links ul {
   display: flex;
@@ -126,6 +137,9 @@ main .mobile-nav .links ul a:hover {
 }
 main .mobile-nav .links ul .indented-link {
   margin-left: 2em;
+}
+main .mobile-nav.active {
+  display: block;
 }
 
 /*# sourceMappingURL=/main.77bb5cfd.css.map */

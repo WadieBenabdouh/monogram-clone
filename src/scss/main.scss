@@ -60,6 +60,12 @@ main {
 
         svg {
             color: $soft-pink;
+            transition: all .3s;
+        }
+
+        svg:hover {
+            color: #e28f74;
+            cursor: pointer;
         }
 
         .right-panel {
@@ -81,7 +87,7 @@ main {
 
                     span {
                         display: block;
-                        height: 3px;
+                        height: 2px;
                         width: 1.8em;
                         background-color: $soft-pink;
                         transition: all 0.3s;
@@ -96,7 +102,6 @@ main {
                 .currency-dropdown {
                     display: flex;
                     width: 25%;
-
 
                     p {
                         color: $soft-pink;
@@ -114,6 +119,10 @@ main {
                             background-color: #fff;
                         }
                     }
+
+                    select:hover {
+                        color: #e28f74;
+                    }
                 }
             }
         }
@@ -121,9 +130,8 @@ main {
 
     // mobile nav
     .mobile-nav {
-        // display: none;
+        display: none;
         padding: 1em;
-        // opacity: .7;
         background-color: $dark-blue;
         position: fixed;
         z-index: 20;
@@ -136,11 +144,13 @@ main {
 
             svg {
                 color: $soft-pink;
+                max-width: 10.2rem;
             }
 
             i {
                 color: $soft-pink;
                 font-size: 1.5rem;
+                cursor: pointer;
             }
         }
 
@@ -173,6 +183,10 @@ main {
                 }
             }
         }
+    }
+
+    .mobile-nav.active {
+        display: block;
     }
 
 }

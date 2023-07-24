@@ -128,6 +128,14 @@ burgerButton.onclick = function () {
 closeNav.onclick = function () {
   mobileNavigation.classList.remove("active");
 };
+
+//CURRENCY CHANGE
+var currencyDropdown = document.getElementById("currency-dropdown");
+var currencySymbol = document.querySelector("#outputCurrency");
+currencyDropdown.addEventListener("change", function () {
+  var selectedCurrency = currencyDropdown.value;
+  currencySymbol.textContent = selectedCurrency;
+});
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -153,7 +161,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50310" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54206" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

@@ -10,3 +10,12 @@ burgerButton.onclick = () => {
 closeNav.onclick = () => {
   mobileNavigation.classList.remove("active");
 };
+
+//CURRENCY CHANGE
+let currencyDropdown = document.getElementById("currency-dropdown");
+let currencySymbol = document.querySelector("#outputCurrency");
+
+currencyDropdown.addEventListener("change", function () {
+  let selectedCurrency = currencyDropdown.value;
+  currencySymbol.textContent = selectedCurrency;
+});

@@ -187,4 +187,48 @@ main::before {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
+.four-products {
+  background-color: #f0efed;
+  padding: 1.5em;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2em;
+}
+.four-products .card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.four-products .card img {
+  max-width: 100%;
+}
+.four-products .card .preorder {
+  position: absolute;
+  right: 0em;
+  top: 1.5em;
+}
+.four-products .card .preorder p {
+  font-size: 0.8rem;
+  background-color: #ff8b68;
+  padding: 5px 10px;
+}
+.four-products .card .details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+}
+.four-products .card .details .name-price {
+  display: flex;
+  justify-content: space-between;
+}
+.four-products .card .details .name-price h3,
+.four-products .card .details .name-price p {
+  color: #1a2456;
+}
+.four-products .card .details .description p {
+  color: #1a2456;
+  font-size: 0.82rem;
+}
+
 /*# sourceMappingURL=/main.77bb5cfd.css.map */

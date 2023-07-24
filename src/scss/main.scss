@@ -285,6 +285,10 @@ main::before {
                 display: flex;
                 justify-content: space-between;
 
+                h3 {
+                    letter-spacing: 1.5px;
+                }
+
                 h3,
                 p {
                     color: $dark-blue;

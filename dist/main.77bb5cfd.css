@@ -23,6 +23,7 @@ a {
 main {
   background: url("/modular-background.972e8fb7.jpg") no-repeat;
   background-size: cover;
+  background-position-x: -190px;
   height: 27em;
   display: flex;
   flex-direction: column;
@@ -107,7 +108,7 @@ main section {
 main section h1 {
   color: #efc2b3;
   text-align: center;
-  line-height: 1.5em;
+  line-height: 1.3em;
   letter-spacing: 5px;
   font-size: 1.9rem;
   width: 70%;
@@ -119,7 +120,11 @@ main section a {
   color: #fff;
 }
 main section a i {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
+  transition: all 0.4s;
+}
+main section a i:hover {
+  transform: scale(1.5);
 }
 main .mobile-nav {
   display: none;

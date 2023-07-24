@@ -39,6 +39,7 @@ a {
 main {
     background: url('/assets/backgrounds/modular-background.jpg') no-repeat;
     background-size: cover;
+    background-position-x: -190px;
     height: 27em;
     display: flex;
     flex-direction: column;
@@ -143,7 +144,7 @@ main {
         h1 {
             color: $soft-pink;
             text-align: center;
-            line-height: 1.5em;
+            line-height: 1.3em;
             letter-spacing: 5px;
             font-size: 1.9rem;
             width: 70%;
@@ -157,7 +158,12 @@ main {
             color: #fff;
 
             i {
-                font-size: 2.5rem;
+                font-size: 1.8rem;
+                transition: all 0.4s;
+            }
+
+            i:hover {
+                transform: scale(1.50);
             }
         }
     }

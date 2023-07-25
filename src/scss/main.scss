@@ -306,3 +306,34 @@ main::before {
         }
     }
 }
+
+//----SUMMARY----//
+summary {
+    background-color: #c1c1c1;
+    display: flex;
+    flex-direction: column;
+    height: 20em;
+    justify-content: center;
+    padding: 2em 1em;
+
+
+    .inner-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5em;
+        color: $dark-blue;
+
+        h2 {
+            font-size: 2rem;
+            text-align: center;
+            letter-spacing: 2px;
+            width: 79%;
+        }
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+}

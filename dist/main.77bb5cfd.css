@@ -234,4 +234,29 @@ main::before {
   font-size: 0.82rem;
 }
 
+summary {
+  background-color: #c1c1c1;
+  display: flex;
+  flex-direction: column;
+  height: 20em;
+  justify-content: center;
+  padding: 2em 1em;
+}
+summary .inner-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
+  color: #1a2456;
+}
+summary .inner-text h2 {
+  font-size: 2rem;
+  text-align: center;
+  letter-spacing: 2px;
+  width: 79%;
+}
+summary img {
+  max-width: 100%;
+}
+
 /*# sourceMappingURL=/main.77bb5cfd.css.map */

@@ -220,15 +220,15 @@ main .mobile-nav.active {
 .four-products .card .details .name-price {
   display: flex;
   justify-content: space-between;
+  color: #1a2456;
 }
 .four-products .card .details .name-price h3 {
   letter-spacing: 1.5px;
 }
-.four-products .card .details .name-price h3,
-.four-products .card .details .name-price p {
-  color: #1a2456;
+.four-products .card .details .name-price .price {
+  display: flex;
 }
-.four-products .card .details .name-price p {
+.four-products .card .details .name-price .price p {
   font-size: 0.8rem;
 }
 .four-products .card .details .description p {

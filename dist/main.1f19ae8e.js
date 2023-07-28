@@ -129,13 +129,20 @@ closeNav.onclick = function () {
   mobileNavigation.classList.remove("active");
 };
 
-//CURRENCY CHANGE
+//CURRENCY CHANGE (HEADER)
 var currencyDropdown = document.getElementById("currency-dropdown");
 var currencySymbol = document.querySelector("#outputCurrency");
+var pageCurrency = document.querySelector(".pageCurrency");
 currencyDropdown.addEventListener("change", function () {
   var selectedCurrency = currencyDropdown.value;
+
+  // HEADER CURRENCY
   currencySymbol.textContent = selectedCurrency;
+  // MAIN PAGE CURRENCY
+  pageCurrency.textContent = selectedCurrency;
 });
+
+//CURRENCY CHANGE (MAIN PAGE)
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';

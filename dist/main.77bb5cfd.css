@@ -30,6 +30,15 @@ main {
   justify-content: space-around;
   align-items: center;
 }
+main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 27em;
+  background-color: rgba(0, 0, 0, 0.6);
+}
 main header {
   display: flex;
   justify-content: space-between;
@@ -177,16 +186,6 @@ main .mobile-nav.active {
   display: block;
 }
 
-main::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 27em;
-  background-color: rgba(0, 0, 0, 0.6);
-}
-
 .four-products {
   background-color: #f0efed;
   padding: 1.5em;
@@ -257,6 +256,52 @@ summary .inner-text h2 {
 }
 summary img {
   max-width: 100%;
+}
+
+.ten-products {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2em;
+  padding: 1.5em;
+}
+.ten-products .mainCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.ten-products .mainCard img {
+  max-width: 100%;
+}
+.ten-products .mainCard .preorder {
+  position: absolute;
+  right: 0em;
+  top: 1.5em;
+}
+.ten-products .mainCard .preorder p {
+  font-size: 0.8rem;
+  background-color: #ff8b68;
+  padding: 5px 10px;
+}
+.ten-products .mainCard .details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+}
+.ten-products .mainCard .details .name-price {
+  display: flex;
+  justify-content: space-between;
+}
+.ten-products .mainCard .details .name-price h3 {
+  letter-spacing: 1.5px;
+}
+.ten-products .mainCard .details .name-price h3,
+.ten-products .mainCard .details .name-price p {
+  color: #1a2456;
+}
+.ten-products .mainCard .details .description p {
+  color: #1a2456;
+  font-size: 0.82rem;
 }
 
 /*# sourceMappingURL=/main.77bb5cfd.css.map */

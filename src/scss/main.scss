@@ -344,6 +344,7 @@ summary {
     grid-template-columns: 1fr;
     gap: 2em;
     padding: 1.5em;
+    background-color: #f0efed;
 
     .mainCard {
         position: relative;
@@ -386,14 +387,6 @@ summary {
                 }
             }
 
-            .description {
-
-                p {
-                    color: $dark-blue;
-                    font-size: 0.82rem;
-                }
-
-            }
         }
     }
 }

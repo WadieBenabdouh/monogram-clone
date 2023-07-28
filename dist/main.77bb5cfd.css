@@ -263,6 +263,7 @@ summary img {
   grid-template-columns: 1fr;
   gap: 2em;
   padding: 1.5em;
+  background-color: #f0efed;
 }
 .ten-products .mainCard {
   position: relative;
@@ -298,10 +299,6 @@ summary img {
 .ten-products .mainCard .details .name-price h3,
 .ten-products .mainCard .details .name-price p {
   color: #1a2456;
-}
-.ten-products .mainCard .details .description p {
-  color: #1a2456;
-  font-size: 0.82rem;
 }
 
 /*# sourceMappingURL=/main.77bb5cfd.css.map */

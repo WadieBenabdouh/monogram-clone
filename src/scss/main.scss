@@ -293,6 +293,10 @@ main {
                 p {
                     color: $dark-blue;
                 }
+
+                p {
+                    font-size: 0.80rem;
+                }
             }
 
             .description {
@@ -376,6 +380,7 @@ summary {
             .name-price {
                 display: flex;
                 justify-content: space-between;
+                align-items: center;
 
                 h3 {
                     letter-spacing: 1.5px;
@@ -384,6 +389,10 @@ summary {
                 h3,
                 p {
                     color: $dark-blue;
+                }
+
+                p {
+                    font-size: 0.80rem;
                 }
             }
 

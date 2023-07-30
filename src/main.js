@@ -11,18 +11,17 @@ closeNav.onclick = () => {
   mobileNavigation.classList.remove("active");
 };
 
-//CURRENCY CHANGE (HEADER)
+//CURRENCY CHANGE
 let currencyDropdown = document.getElementById("currency-dropdown");
 let currencySymbol = document.querySelector("#outputCurrency");
-let pageCurrency = document.querySelector(".pageCurrency");
+let pageCurrency = document.querySelectorAll(".pageCurrency");
 
 currencyDropdown.addEventListener("change", function () {
   let selectedCurrency = currencyDropdown.value;
-
   // HEADER CURRENCY
   currencySymbol.textContent = selectedCurrency;
   // MAIN PAGE CURRENCY
-  pageCurrency.textContent = selectedCurrency;
+  pageCurrency.forEach((element) => {
+    element.textContent = selectedCurrency;
+  });
 });
-
-//CURRENCY CHANGE (MAIN PAGE)

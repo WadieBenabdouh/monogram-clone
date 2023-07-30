@@ -129,20 +129,19 @@ closeNav.onclick = function () {
   mobileNavigation.classList.remove("active");
 };
 
-//CURRENCY CHANGE (HEADER)
+//CURRENCY CHANGE
 var currencyDropdown = document.getElementById("currency-dropdown");
 var currencySymbol = document.querySelector("#outputCurrency");
-var pageCurrency = document.querySelector(".pageCurrency");
+var pageCurrency = document.querySelectorAll(".pageCurrency");
 currencyDropdown.addEventListener("change", function () {
   var selectedCurrency = currencyDropdown.value;
-
   // HEADER CURRENCY
   currencySymbol.textContent = selectedCurrency;
   // MAIN PAGE CURRENCY
-  pageCurrency.textContent = selectedCurrency;
+  pageCurrency.forEach(function (element) {
+    element.textContent = selectedCurrency;
+  });
 });
-
-//CURRENCY CHANGE (MAIN PAGE)
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -168,7 +167,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50400" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49906" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

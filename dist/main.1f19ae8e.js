@@ -118,7 +118,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"main.js":[function(require,module,exports) {
-//BURGER MENU
+//----------BURGER MENU----------//
 var burgerButton = document.querySelector("#menu-toggle");
 var mobileNavigation = document.querySelector("#mobile-nav");
 var closeNav = document.querySelector("#close-nav");
@@ -129,7 +129,7 @@ closeNav.onclick = function () {
   mobileNavigation.classList.remove("active");
 };
 
-//CURRENCY CHANGE
+//----------CURRENCY CHANGE----------//
 var currencyDropdown = document.getElementById("currency-dropdown");
 var currencySymbol = document.querySelector("#outputCurrency");
 var pageCurrency = document.querySelectorAll(".pageCurrency");
@@ -141,6 +141,17 @@ currencyDropdown.addEventListener("change", function () {
   pageCurrency.forEach(function (element) {
     element.textContent = selectedCurrency;
   });
+});
+
+//----------FOOTER EMAIL----------//
+var emailInput = document.getElementById("subscribeInput");
+var submitBtn = document.getElementById("submitBtn");
+emailInput.addEventListener("input", function () {
+  if (emailInput.value.length > 0) {
+    submitBtn.classList.add("active");
+  } else {
+    submitBtn.classList.remove("active");
+  }
 });
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];

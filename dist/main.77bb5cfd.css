@@ -323,7 +323,7 @@ footer .newsletter-wrapper p {
   font-size: 0.7rem;
 }
 footer .newsletter-wrapper form {
-  width: 80%;
+  width: 100%;
 }
 footer .newsletter-wrapper form label {
   display: flex;
@@ -331,10 +331,14 @@ footer .newsletter-wrapper form label {
   gap: 1em;
 }
 footer .newsletter-wrapper form label input[type=email] {
+  flex-basis: 55%;
   background-color: #1a2456;
   border: #efc2b3 solid 1px;
   padding: 0.5em;
   color: #fff;
+}
+footer .newsletter-wrapper form label input[type=email]:focus {
+  outline: none;
 }
 footer .newsletter-wrapper form label input[type=submit] {
   color: #1a2456;
@@ -343,12 +347,17 @@ footer .newsletter-wrapper form label input[type=submit] {
   border-radius: 50px;
   padding: 0.5em 1.5em;
 }
+footer .newsletter-wrapper form label input[type=submit].active {
+  background-color: #efc2b3;
+  cursor: pointer;
+}
 footer .newsletter-wrapper .socials ul {
   display: flex;
   align-items: center;
   gap: 1em;
 }
 footer .newsletter-wrapper .socials ul li a {
+  font-size: 0.8rem;
   color: #1a2456;
   background-color: #efc2b3;
   padding: 6px;

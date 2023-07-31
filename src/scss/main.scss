@@ -416,7 +416,7 @@ footer {
         }
 
         form {
-            width: 80%;
+            width: 100%;
 
             label {
                 display: flex;
@@ -424,10 +424,15 @@ footer {
                 gap: 1em;
 
                 input[type="email"] {
+                    flex-basis: 55%;
                     background-color: $dark-blue;
                     border: $soft-pink solid 1px;
                     padding: 0.5em;
                     color: #fff;
+
+                    &:focus {
+                        outline: none;
+                    }
                 }
 
                 input[type="submit"] {
@@ -436,6 +441,11 @@ footer {
                     border: none;
                     border-radius: 50px;
                     padding: 0.5em 1.5em;
+                }
+
+                input[type="submit"].active {
+                    background-color: $soft-pink; //active color
+                    cursor: pointer;
                 }
 
             }
@@ -451,6 +461,7 @@ footer {
                 li {
 
                     a {
+                        font-size: 0.8rem;
                         color: $dark-blue;
                         background-color: #efc2b3;
                         padding: 6px;

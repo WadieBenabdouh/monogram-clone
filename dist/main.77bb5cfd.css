@@ -117,10 +117,10 @@ main section {
 main section h1 {
   color: #efc2b3;
   text-align: center;
-  line-height: 1.3em;
+  line-height: 1.4em;
   letter-spacing: 5px;
   font-size: 1.9rem;
-  width: 70%;
+  width: 80%;
 }
 main section p {
   color: #efc2b3;
@@ -306,6 +306,54 @@ summary img {
 }
 .ten-products .mainCard .details .name-price p {
   font-size: 0.8rem;
+}
+
+footer {
+  padding: 1.5em;
+  background-color: #1a2456;
+  color: #fff;
+}
+footer .newsletter-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+footer .newsletter-wrapper h6,
+footer .newsletter-wrapper p {
+  font-size: 0.7rem;
+}
+footer .newsletter-wrapper form {
+  width: 80%;
+}
+footer .newsletter-wrapper form label {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1em;
+}
+footer .newsletter-wrapper form label input[type=email] {
+  background-color: #1a2456;
+  border: #efc2b3 solid 1px;
+  padding: 0.5em;
+  color: #fff;
+}
+footer .newsletter-wrapper form label input[type=submit] {
+  color: #1a2456;
+  background-color: rgba(239, 194, 179, 0.5882352941);
+  border: none;
+  border-radius: 50px;
+  padding: 0.5em 1.5em;
+}
+footer .newsletter-wrapper .socials ul {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+footer .newsletter-wrapper .socials ul li a {
+  color: #1a2456;
+  background-color: #efc2b3;
+  padding: 6px;
+  display: flex;
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=/main.77bb5cfd.css.map */

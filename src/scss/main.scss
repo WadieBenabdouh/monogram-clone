@@ -154,10 +154,10 @@ main {
         h1 {
             color: $soft-pink;
             text-align: center;
-            line-height: 1.3em;
+            line-height: 1.4em;
             letter-spacing: 5px;
             font-size: 1.9rem;
-            width: 70%;
+            width: 80%;
         }
 
         p {
@@ -395,6 +395,70 @@ summary {
                 }
             }
 
+        }
+    }
+}
+
+//----FOOTER----//
+footer {
+    padding: 1.5em;
+    background-color: $dark-blue;
+    color: #fff; //dev
+
+    .newsletter-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+
+        h6,
+        p {
+            font-size: 0.7rem;
+        }
+
+        form {
+            width: 80%;
+
+            label {
+                display: flex;
+                justify-content: flex-start;
+                gap: 1em;
+
+                input[type="email"] {
+                    background-color: $dark-blue;
+                    border: $soft-pink solid 1px;
+                    padding: 0.5em;
+                    color: #fff;
+                }
+
+                input[type="submit"] {
+                    color: $dark-blue;
+                    background-color: #efc2b396; //not active color
+                    border: none;
+                    border-radius: 50px;
+                    padding: 0.5em 1.5em;
+                }
+
+            }
+        }
+
+        .socials {
+
+            ul {
+                display: flex;
+                align-items: center;
+                gap: 1em;
+
+                li {
+
+                    a {
+                        color: $dark-blue;
+                        background-color: #efc2b3;
+                        padding: 6px;
+                        display: flex;
+                        border-radius: 50%;
+                    }
+                }
+            }
         }
     }
 }

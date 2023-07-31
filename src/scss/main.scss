@@ -401,9 +401,12 @@ summary {
 
 //----FOOTER----//
 footer {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5em;
     padding: 1.5em;
     background-color: $dark-blue;
-    color: #fff; //dev
+    color: $soft-pink;
 
     .newsletter-wrapper {
         display: flex;
@@ -459,6 +462,7 @@ footer {
                 gap: 1em;
 
                 li {
+                    display: flex;
 
                     a {
                         font-size: 0.8rem;
@@ -467,6 +471,36 @@ footer {
                         padding: 6px;
                         display: flex;
                         border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-links {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3em;
+
+        h6,
+        p {
+            font-size: 0.7rem;
+        }
+
+        ul {
+
+            h6 {
+                margin-bottom: 1em;
+            }
+
+            li {
+
+                a {
+                    color: $soft-pink;
+                    font-size: 0.7rem;
+
+                    &:hover {
+                        text-decoration: underline;
                     }
                 }
             }
